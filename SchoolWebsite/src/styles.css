@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: "Poppins", sans-serif !important;
+    font-style: normal;
+}
+
+#bg-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the SVG stays behind other content */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice"><defs><radialGradient id="Gradient1" cx="50%" cy="50%" fx="0.441602%" fy="50%" r=".5"><animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255, 0, 255, 1)"></stop><stop offset="100%" stop-color="rgba(255, 0, 255, 0)"></stop></radialGradient><rect x="13.744%" y="1.18473%" width="100%" height="100%" fill="url(#Gradient1)" transform="rotate(334.41 50 50)"><animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="7s" repeatCount="indefinite"></animateTransform></rect></svg>') center center no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.btn-outline-secondary
+{
+    border: 1px solid #dee2e6
+}
+
+.bg-gray {
+    background-color: #efefef !important;
+}
+
+.shadows {
+    box-shadow: 56px -150px 78px 1px rgba(0,0,0,0.78) inset !important;
+    -webkit-box-shadow: 56px -150px 78px 1px rgba(0,0,0,0.78) inset !important;
+    -moz-box-shadow: 56px -150px 78px 1px rgba(0,0,0,0.78) inset !important;
+    /* height: 150px; */
+}
+
+.bg-green {
+    background-color: #16FF00;
+    color: #000 !important;
+}

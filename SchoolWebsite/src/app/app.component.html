@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+
+<!-- Wrap the loading indicator and content in a div with *ngIf -->
+<div *ngIf="!isLoading">
+  <app-loading-indicator></app-loading-indicator>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 m-0 p-0">
+        <!-- Content of each page goes here -->
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

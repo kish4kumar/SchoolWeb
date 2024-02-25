@@ -1,0 +1,71 @@
+.background-image {
+    background-image: url('/assets/hero1.png') !important; /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    /* height: 150px; */
+}
+
+.flash-news-container {
+    overflow: hidden;
+    position: relative; /* Add relative positioning */
+}
+
+.flash-news {
+    display: flex;
+    animation: marquee 30s linear infinite;
+    scroll-behavior: smooth; 
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.flash-news-item {
+    margin-right: 35px;
+    white-space: nowrap;
+}
+
+.flash-news-container:hover .flash-news {
+    animation-play-state: paused; /* Pause animation on hover */
+}
+
+.flashit{
+      -webkit-animation: flash linear 1s infinite;
+      animation: flash linear 1s infinite;
+  }
+
+  @-webkit-keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
